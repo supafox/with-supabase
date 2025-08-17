@@ -1,0 +1,112 @@
+---
+title: Code Showcase
+description: Examples of code formatting in the documentation.
+---
+
+## Code Examples
+
+This page demonstrates how code is formatted and displayed in the documentation.
+
+### Inline Code
+
+Inline code is styled with a monospace font and background color. Here's some `inline code` to demonstrate code formatting. You can also use `const variable = "value"` and `function example() {}` within paragraphs.
+
+### Basic Code Blocks
+
+```javascript
+// Basic JavaScript function
+function loremIpsum() {
+  const dolor = "sit amet"
+  const consectetur = "adipiscing elit"
+  return dolor + " " + consectetur
+}
+
+// Function usage
+const example = loremIpsum()
+console.log(example)
+```
+
+### HTML Example
+
+```html
+<!-- Basic HTML structure -->
+<div class="lorem-ipsum">
+  <h1>Lorem Ipsum</h1>
+  <p>Dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+```
+
+### CSS Example
+
+```css
+/* Basic styling */
+.lorem-ipsum {
+  color: #4f46e5;
+  font-family: "Arial", sans-serif;
+  padding: 1rem;
+}
+```
+
+### JSON Example
+
+```json
+{
+  "loremIpsum": {
+    "text": "Lorem ipsum dolor sit amet",
+    "description": "Consectetur adipiscing elit"
+  }
+}
+```
+
+### Shell Commands
+
+```bash
+# Package management
+npm install lorem-ipsum
+npm run dev
+
+# Git workflow
+git add .
+git commit -m "Add lorem ipsum content"
+```
+
+## Code with Comments
+
+Well-documented code is essential for maintainability:
+
+```javascript
+/**
+ * Processes lorem ipsum text
+ * @param {string} input - The input text to process
+ * @returns {string} The processed text
+ */
+function processLoremIpsum(input) {
+  // Validate input
+  if (!input || typeof input !== "string") {
+    throw new Error("Invalid input provided")
+  }
+
+  // Process the text
+  const processed = input.trim().toLowerCase()
+  return processed
+}
+```
+
+## Mixed Code Examples
+
+Here's a combination of `inline code` and code blocks:
+
+```javascript
+// Object creation and manipulation
+const loremIpsum = {
+  text: "Lorem ipsum dolor sit amet",
+  length: 5,
+  words: ["Lorem", "ipsum", "dolor", "sit", "amet"],
+}
+
+// Template literals and array methods
+console.log(`Text: ${loremIpsum.text}`)
+console.log(`Words: ${loremIpsum.words.join(" ")}`)
+```
+
+The code above demonstrates `object creation`, `template literals`, and `array methods` in JavaScript.
