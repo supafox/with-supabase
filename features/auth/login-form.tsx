@@ -67,6 +67,7 @@ export function LoginForm({
   })
 
   const [isLoading, setIsLoading] = useState(false)
+  const [isOAuthLoading, setIsOAuthLoading] = useState(false)
   const [isOTP, setIsOTP] = useState(false)
   const router = useRouter()
   // Get form state for validation
@@ -90,9 +91,14 @@ export function LoginForm({
   }
 
   const handleGithubSignIn = async () => {
+    setIsOAuthLoading(true)
     try {
       await signInWithGithub()
+      // Don't clear the loading state here since OAuth will redirect the user away
+      // The loading state will persist until the page unloads or redirects
     } catch (error) {
+      // Only clear loading state on error, since successful OAuth redirects away
+      setIsOAuthLoading(false)
       toast.error("Failed to sign in with GitHub:\n" + (error as Error).message)
     }
   }
@@ -270,21 +276,31 @@ export function LoginForm({
           type="button"
           className="w-full hover:cursor-pointer"
           onClick={() => handleGithubSignIn()}
+          disabled={isLoading || isOAuthLoading}
         >
-          <IconBrandGithub />
-          GitHub
+          {isOAuthLoading ? (
+            <>
+              <div className="mr-2 h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" />
+            </>
+          ) : (
+            <>
+              <IconBrandGithub />
+              GitHub
+            </>
+          )}
         </Button>
         <Button
           variant="outline"
           type="button"
           className="w-full hover:cursor-pointer"
+          disabled={isLoading || isOAuthLoading}
         >
           <IconStackBackward />
           Acme
         </Button>
       </div>
 
-      <div className="text-muted-foreground *:[a]:hover:text-primary text-copy-12 flex justify-center text-balance *:[a]:underline *:[a]:underline-offset-4">
+      <div className="text-muted-foreground *:[a]:hover:text-primary text-center text-xs text-balance *:[a]:underline *:[a]:underline-offset-4">
         By clicking continue, you agree to our{" "}
         <Link href="/">Terms of Service</Link> and{" "}
         <Link href="/">Privacy Policy</Link>.
