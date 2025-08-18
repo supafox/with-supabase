@@ -12,8 +12,6 @@ import { getProfile } from "@/shared/actions/user"
 
 import { Toaster } from "@/components/ui/sonner"
 
-export const dynamic = "force-dynamic"
-
 export const metadata: Metadata = {
   ...defaultMeta,
 }

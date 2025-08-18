@@ -1,9 +1,9 @@
+import Image from "next/image"
 import Link from "next/link"
 import { IconArrowLeft } from "@tabler/icons-react"
 
 import { Icons } from "@/config/icons"
 import { buttonVariants } from "@/components/ui/button"
-import Image from "@/components/ui/image"
 
 export default function NotFound() {
   return (
@@ -14,7 +14,7 @@ export default function NotFound() {
         alt="404 Error"
         width={500}
         height={500}
-        className="relative z-10"
+        className="relative z-10 rounded-md"
         style={{ color: "" }}
       />
       <Link
