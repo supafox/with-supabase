@@ -6,6 +6,10 @@ reviews:
         ✅ Style with Tailwind utility classes or design tokens only.
         ❌ Do not fetch data or include context/state logic.
         ❌ Do not use feature-specific props or business logic.
+        ---
+        ✅ Use only the typography utility classes defined in `globals.css` (e.g., `heading-*`, `copy-*`, `button-*`, `label-*`) for type scale, weight, tracking and line-height.
+        ❌ Do not use Tailwind's built-in typography sizing/weight/spacing utilities such as preset scales (`text-xs` … `text-9xl`), arbitrary sizes (`text-[...]`), `font-*`, `leading-*`, or `tracking-*` directly.
+        ✅ Colour utilities (e.g., `text-foreground`, `text-muted-foreground`) remain allowed.
 
     - path: "shared/ui/"
       instructions: |
@@ -33,6 +37,10 @@ reviews:
         ✅ Use for layout/page-specific component compositions (e.g., Navbar, HeroSection).
         ✅ Can compose shared UI, features, and include state handlers.
         ❌ Do not reuse these components in other routes or features.
+        ---
+        ✅ Use only the typography utility classes defined in `globals.css` (e.g., `heading-*`, `copy-*`, `button-*`, `label-*`) for type scale, weight, tracking and line-height.
+        ❌ Do not use Tailwind's built-in typography sizing/weight/spacing utilities such as preset scales (`text-xs` … `text-9xl`), arbitrary sizes (`text-[...]`), `font-*`, `leading-*`, or `tracking-*` directly.
+        ✅ Colour utilities (e.g., `text-foreground`, `text-muted-foreground`) remain allowed.
 
     - path: "shared/hooks/"
       instructions: |

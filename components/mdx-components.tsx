@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "next/image"
+import NextImage from "next/image"
 
 import { cn } from "@/lib/utils"
 
@@ -38,7 +38,13 @@ export const mdxComponents = {
     <h6 className={cn("heading-20 mt-4 scroll-m-28", className)} {...props} />
   ),
   a: ({ className, ...props }: React.ComponentProps<"a">) => (
-    <a className={cn("underline underline-offset-4", className)} {...props} />
+    <a
+      className={cn(
+        "focus-visible:ring-ring/50 underline underline-offset-4 outline-none focus-visible:ring-[3px]",
+        className
+      )}
+      {...props}
+    />
   ),
   p: ({ className, ...props }: React.ComponentProps<"p">) => (
     <p
@@ -47,7 +53,7 @@ export const mdxComponents = {
     />
   ),
   strong: ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => (
-    <strong className={cn("copy-14-semibold", className)} {...props} />
+    <strong className={cn("font-semibold", className)} {...props} />
   ),
   ul: ({ className, ...props }: React.ComponentProps<"ul">) => (
     <ul className={cn("my-6 ml-6 list-disc", className)} {...props} />
@@ -115,7 +121,7 @@ export const mdxComponents = {
       return (
         <code
           className={cn(
-            "bg-muted copy-14 relative rounded-md px-[0.3rem] py-[0.2rem] font-mono break-words outline-none",
+            "bg-muted relative rounded-md px-[0.3rem] py-[0.2rem] font-mono break-words outline-none",
             className
           )}
           {...props}
@@ -139,9 +145,11 @@ export const mdxComponents = {
     height,
     alt,
     ...props
-  }: React.ComponentProps<"img">) => {
+  }: React.ComponentProps<typeof NextImage>) => {
     // Validate required props
-    const isValidSrc = src && typeof src === "string" && src.trim() !== ""
+    const isValidSrc =
+      (typeof src === "string" && src.trim() !== "") ||
+      (src && typeof src === "object")
     const validWidth = validateImageDimension(width)
     const validHeight = validateImageDimension(height)
 
@@ -171,7 +179,7 @@ export const mdxComponents = {
     }
 
     return (
-      <Image
+      <NextImage
         src={src}
         width={fallbackWidth}
         height={fallbackHeight}

@@ -123,6 +123,7 @@
   }
   body {
     font-synthesis-weight: none;
+    font-synthesis-style: none;
     text-rendering: optimizeLegibility;
     @apply text-foreground bg-background;
   }
@@ -228,7 +229,7 @@
   @apply font-semibold text-balance;
   font-size: clamp(1rem, 1.5vw, 1.25rem);
   line-height: clamp(20px, 2.5vw, 28px);
-  letter-spacing: clamp(-0.003rem, -0.01vw, -0.01rem);
+  letter-spacing: clamp(0, -0.005vw, -0.006rem);
 }
 
 @utility heading-16 {
