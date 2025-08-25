@@ -2,5 +2,5 @@
 alwaysApply: true
 ---
 
-- Only use project-defined typography utilities (e.g., `heading-*`, `copy-*`, `button-*`, `label-*`).
-- Do not use Tailwind's default `text-*`, `font-*`, `leading-*`, or `tracking-*` classes directly.
+- Do not use Tailwind’s default typography sizing/weight/spacing utilities (`text-[size]`, `font-*`, `leading-*`, `tracking-*`) directly.
+- Colour utilities (e.g., `text-foreground`, `text-muted-foreground`) are allowed.

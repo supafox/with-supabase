@@ -31,30 +31,30 @@ function BreadcrumbItem({ className, ...props }: React.ComponentProps<"li">) {
   )
 }
 
-const BreadcrumbLink = React.forwardRef<
-  HTMLAnchorElement,
-  React.ComponentProps<"a"> & { asChild?: boolean }
->(({ asChild, className, ...props }, ref) => {
+function BreadcrumbLink({
+  asChild,
+  className,
+  ...props
+}: React.ComponentProps<"a"> & {
+  asChild?: boolean
+}) {
   const Comp = asChild ? Slot : "a"
 
   return (
     <Comp
-      ref={ref}
       data-slot="breadcrumb-link"
       className={cn("hover:text-foreground transition-colors", className)}
       {...props}
     />
   )
-})
-
-BreadcrumbLink.displayName = "BreadcrumbLink"
+}
 
 function BreadcrumbPage({ className, ...props }: React.ComponentProps<"span">) {
   return (
     <span
       data-slot="breadcrumb-page"
       aria-current="page"
-      className={cn("text-foreground font-normal", className)}
+      className={cn("text-foreground", className)}
       {...props}
     />
   )
@@ -85,11 +85,12 @@ function BreadcrumbEllipsis({
   return (
     <span
       data-slot="breadcrumb-ellipsis"
-      aria-label="More"
+      role="presentation"
+      aria-hidden="true"
       className={cn("flex size-9 items-center justify-center", className)}
       {...props}
     >
-      <IconDots className="size-4" aria-hidden="true" />
+      <IconDots className="size-4" />
       <span className="sr-only">More</span>
     </span>
   )

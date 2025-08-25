@@ -35,6 +35,7 @@ export default function Docs() {
                     buttonVariants({ variant: "link" }),
                     "w-fit pl-0"
                   )}
+                  aria-label={`Read more about ${item.name}`}
                 >
                   Read more
                 </Link>

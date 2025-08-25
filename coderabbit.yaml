@@ -12,6 +12,10 @@ reviews:
         ✅ Use for reusable presentational components that are composed from primitives.
         ✅ May include layout awareness or context (e.g., responsive, theme).
         ❌ Do not include API calls, server actions, or side effects.
+        ---
+        ✅ Use only the typography utility classes defined in `globals.css` (e.g., `heading-*`, `copy-*`, `button-*`, `label-*`) for type scale, weight, tracking and line-height.
+        ❌ Do not use Tailwind's built-in typography sizing/weight/spacing utilities such as preset scales (`text-xs` … `text-9xl`), arbitrary sizes (`text-[...]`), `font-*`, `leading-*`, or `tracking-*` directly.
+        ✅ Colour utilities (e.g., `text-foreground`, `text-muted-foreground`) remain allowed.
 
     - path: "features/"
       instructions: |
@@ -19,6 +23,10 @@ reviews:
         ✅ May include feature-specific hooks, actions, and schema validation.
         ✅ Can use Supabase, APIs, or database logic.
         ❌ Do not put shared/global components here.
+        ---
+        ✅ Use only the typography utility classes defined in `globals.css` (e.g., `heading-*`, `copy-*`, `button-*`, `label-*`) for type scale, weight, tracking and line-height.
+        ❌ Do not use Tailwind's built-in typography sizing/weight/spacing utilities such as preset scales (`text-xs` … `text-9xl`), arbitrary sizes (`text-[...]`), `font-*`, `leading-*`, or `tracking-*` directly.
+        ✅ Colour utilities (e.g., `text-foreground`, `text-muted-foreground`) remain allowed.
 
     - path: "components/widgets/"
       instructions: |
@@ -29,7 +37,8 @@ reviews:
     - path: "shared/hooks/"
       instructions: |
         ✅ Use for global, cross-feature utility hooks.
-        ❌ Do not use feature-specific logic or local state here.
+        ❌ Do not include feature-specific/business logic here.
+        ✅ Local state within generic, cross-cutting hooks is allowed; avoid feature-coupled side effects and data fetching.
 
     - path: "lib/"
       instructions: |
@@ -47,21 +56,13 @@ reviews:
         ❌ Do not add component-scoped styles here.
 
     - path: "app/"
-      instructions: |
-        ✅ Use only the typography utility classes defined in `globals.css` (e.g., `heading-*`, `copy-*`, `button-*`, `label-*`).
-        ❌ Do not use Tailwind's built-in typography utilities like `text-*`, `font-*`, `leading-*`, or `tracking-*` classes directly.
+      instructions: &typography_policy |
+        ✅ Use only the typography utility classes defined in `globals.css` (e.g., `heading-*`, `copy-*`, `button-*`, `label-*`) for type scale, weight, tracking and line-height.
+        ❌ Do not use Tailwind's built-in typography sizing/weight/spacing utilities such as preset scales (`text-xs` … `text-9xl`), arbitrary sizes (`text-[...]`), `font-*`, `leading-*`, or `tracking-*` directly.
+        ✅ Colour utilities (e.g., `text-foreground`, `text-muted-foreground`) remain allowed.
 
     - path: "components/"
-      instructions: |
-        ✅ Use only the typography utility classes defined in `globals.css` (e.g., `heading-*`, `copy-*`, `button-*`, `label-*`).
-        ❌ Do not use Tailwind's built-in typography utilities like `text-*`, `font-*`, `leading-*`, or `tracking-*` classes directly.
-
-    - path: "features/"
-      instructions: |
-        ✅ Use only the typography utility classes defined in `globals.css` (e.g., `heading-*`, `copy-*`, `button-*`, `label-*`).
-        ❌ Do not use Tailwind's built-in typography utilities like `text-*`, `font-*`, `leading-*`, or `tracking-*` classes directly.
+      instructions: *typography_policy
 
     - path: "components/widgets/"
-      instructions: |
-        ✅ Use only the typography utility classes defined in `globals.css` (e.g., `heading-*`, `copy-*`, `button-*`, `label-*`).
-        ❌ Do not use Tailwind's built-in typography utilities like `text-*`, `font-*`, `leading-*`, or `tracking-*` classes directly.
+      instructions: *typography_policy
