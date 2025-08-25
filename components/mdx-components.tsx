@@ -147,9 +147,15 @@ export const mdxComponents = {
     ...props
   }: React.ComponentProps<typeof NextImage>) => {
     // Validate required props
+    const isValidStaticImport =
+      !!src &&
+      typeof src === "object" &&
+      src !== null &&
+      "src" in src &&
+      typeof (src as { src: unknown }).src === "string"
+
     const isValidSrc =
-      (typeof src === "string" && src.trim() !== "") ||
-      (src && typeof src === "object")
+      (typeof src === "string" && src.trim() !== "") || isValidStaticImport
     const validWidth = validateImageDimension(width)
     const validHeight = validateImageDimension(height)
 

@@ -138,98 +138,98 @@
   @apply font-semibold text-balance;
   font-size: clamp(3.5rem, 8vw, 4.5rem);
   line-height: clamp(64px, 12vw, 80px);
-  letter-spacing: clamp(-0.1345rem, -0.3vw, -0.1917rem);
+  letter-spacing: clamp(-0.1917rem, -0.3vw, -0.1345rem);
 }
 
 @utility heading-68 {
   @apply font-semibold text-balance;
   font-size: clamp(3.25rem, 7.5vw, 4.25rem);
   line-height: clamp(60px, 11vw, 76px);
-  letter-spacing: clamp(-0.1202rem, -0.27vw, -0.1774rem);
+  letter-spacing: clamp(-0.1774rem, -0.27vw, -0.1202rem);
 }
 
 @utility heading-64 {
   @apply font-semibold text-balance;
   font-size: clamp(3rem, 7vw, 4rem);
   line-height: clamp(56px, 10vw, 72px);
-  letter-spacing: clamp(-0.1059rem, -0.24vw, -0.1631rem);
+  letter-spacing: clamp(-0.1631rem, -0.24vw, -0.1059rem);
 }
 
 @utility heading-60 {
   @apply font-semibold text-balance;
   font-size: clamp(2.75rem, 6.5vw, 3.75rem);
   line-height: clamp(52px, 9vw, 68px);
-  letter-spacing: clamp(-0.0916rem, -0.21vw, -0.1488rem);
+  letter-spacing: clamp(-0.1488rem, -0.21vw, -0.0916rem);
 }
 
 @utility heading-56 {
   @apply font-semibold text-balance;
   font-size: clamp(2.5rem, 6vw, 3.5rem);
   line-height: clamp(48px, 8vw, 64px);
-  letter-spacing: clamp(-0.0773rem, -0.18vw, -0.1345rem);
+  letter-spacing: clamp(-0.1345rem, -0.18vw, -0.0773rem);
 }
 
 @utility heading-52 {
   @apply font-semibold text-balance;
   font-size: clamp(2.25rem, 5.5vw, 3.25rem);
   line-height: clamp(44px, 7vw, 60px);
-  letter-spacing: clamp(-0.063rem, -0.15vw, -0.1202rem);
+  letter-spacing: clamp(-0.1202rem, -0.15vw, -0.063rem);
 }
 
 @utility heading-48 {
   @apply font-semibold text-balance;
   font-size: clamp(2rem, 5vw, 3rem);
   line-height: clamp(40px, 6vw, 56px);
-  letter-spacing: clamp(-0.0487rem, -0.12vw, -0.1059rem);
+  letter-spacing: clamp(-0.1059rem, -0.12vw, -0.0487rem);
 }
 
 @utility heading-44 {
   @apply font-semibold text-balance;
   font-size: clamp(1.875rem, 4.5vw, 2.75rem);
   line-height: clamp(40px, 5.5vw, 52px);
-  letter-spacing: clamp(-0.04rem, -0.1vw, -0.0916rem);
+  letter-spacing: clamp(-0.0916rem, -0.1vw, -0.04rem);
 }
 
 @utility heading-40 {
   @apply font-semibold text-balance;
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   line-height: clamp(36px, 5vw, 48px);
-  letter-spacing: clamp(-0.032rem, -0.08vw, -0.0773rem);
+  letter-spacing: clamp(-0.0773rem, -0.08vw, -0.032rem);
 }
 
 @utility heading-36 {
   @apply font-semibold text-balance;
   font-size: clamp(1.625rem, 3.5vw, 2.25rem);
   line-height: clamp(32px, 4.5vw, 44px);
-  letter-spacing: clamp(-0.024rem, -0.06vw, -0.063rem);
+  letter-spacing: clamp(-0.063rem, -0.06vw, -0.024rem);
 }
 
 @utility heading-32 {
   @apply font-semibold text-balance;
   font-size: clamp(1.5rem, 3vw, 2rem);
   line-height: clamp(32px, 4vw, 40px);
-  letter-spacing: clamp(-0.02rem, -0.05vw, -0.0487rem);
+  letter-spacing: clamp(-0.0487rem, -0.05vw, -0.02rem);
 }
 
 @utility heading-28 {
   @apply font-semibold text-balance;
   font-size: clamp(1.25rem, 2.5vw, 1.75rem);
   line-height: clamp(28px, 3.5vw, 36px);
-  letter-spacing: clamp(-0.01rem, -0.03vw, -0.0344rem);
+  letter-spacing: clamp(-0.0344rem, -0.03vw, -0.01rem);
 }
 
 @utility heading-24 {
   @apply font-semibold text-balance;
   font-size: clamp(1rem, 2vw, 1.5rem);
   line-height: clamp(24px, 3vw, 32px);
-  letter-spacing: clamp(-0.005rem, -0.02vw, -0.02rem);
+  letter-spacing: clamp(-0.02rem, -0.02vw, -0.005rem);
 }
 
 @utility heading-20 {
   @apply font-semibold text-balance;
   font-size: clamp(1rem, 1.5vw, 1.25rem);
   line-height: clamp(20px, 2.5vw, 28px);
-  letter-spacing: clamp(0, -0.005vw, -0.006rem);
+  letter-spacing: clamp(-0.006rem, -0.005vw, 0);
 }
 
 @utility heading-16 {
