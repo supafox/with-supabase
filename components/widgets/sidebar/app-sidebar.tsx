@@ -44,9 +44,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                     focusable="false"
                   />
                 </div>
-                <div className="text-copy-14 grid flex-1 text-left leading-tight">
+                <div className="copy-14 grid flex-1 text-left leading-tight">
                   <span className="truncate font-medium">Acme Corporation</span>
-                  <span className="text-copy-12 truncate">Enterprise</span>
+                  <span className="copy-12 truncate">Enterprise</span>
                 </div>
               </Link>
             </SidebarMenuButton>

@@ -12,7 +12,9 @@ import { mdxComponents } from "@/components/mdx-components"
  * Generates an Open Graph image URL with encoded title and description parameters
  */
 function generateOgImageUrl(title: string, description: string): string {
-  return `/og?title=${encodeURIComponent(title)}&description=${encodeURIComponent(description)}`
+  return `/og?title=${encodeURIComponent(title)}&description=${encodeURIComponent(
+    description
+  )}`
 }
 
 export function generateStaticParams() {
@@ -88,10 +90,8 @@ export default async function Page(props: {
     >
       <div className="flex items-start justify-between gap-16 md:items-center">
         <div className="flex flex-col">
-          <h1 className="text-heading-56">{doc.title}</h1>
-          <p className="text-copy-20 text-muted-foreground">
-            {doc.description}
-          </p>
+          <h1 className="heading-56">{doc.title}</h1>
+          <p className="copy-20 text-muted-foreground">{doc.description}</p>
         </div>
         <div className="flex max-w-2xl gap-2">
           {neighbours.previous && (

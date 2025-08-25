@@ -160,8 +160,8 @@ export function LoginForm({
                 </div>
                 <span className="sr-only">Acme Corporation</span>
               </Link>
-              <h1 className="text-heading-20">Enter OTP</h1>
-              <div className="text-copy-14 flex justify-center">
+              <h1 className="heading-20">Enter OTP</h1>
+              <div className="copy-14 flex justify-center">
                 We&apos;ve sent a code to {emailForm.getValues("email")}
               </div>
             </div>
@@ -230,8 +230,8 @@ export function LoginForm({
           <IconStackBackward className="size-10" />
           <span className="sr-only">Acme Corporation</span>
         </Link>
-        <h1 className="text-heading-20">Welcome to Acme Corporation</h1>
-        <div className="text-copy-14 flex justify-center">
+        <h1 className="heading-20">Welcome to Acme Corporation</h1>
+        <div className="copy-14 flex justify-center">
           Login or sign up to continue.
         </div>
       </div>
@@ -263,7 +263,7 @@ export function LoginForm({
           </Button>
         </form>
       </Form>
-      <div className="after:border-border text-copy-14 relative flex justify-center after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t">
+      <div className="after:border-border copy-14 relative flex justify-center after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t">
         <span className="bg-background text-muted-foreground relative z-10 px-2">
           Or continue with
         </span>

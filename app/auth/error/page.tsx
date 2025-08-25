@@ -21,15 +21,15 @@ export default async function AuthErrorPage({
               <IconAlertCircle className="text-destructive size-10" />
               <span className="sr-only">Authentication Error</span>
             </div>
-            <h1 className="text-heading-20">Authentication Error</h1>
-            <p className="text-copy-14 text-center">
+            <h1 className="heading-20">Authentication Error</h1>
+            <p className="copy-14 text-center">
               There was a problem with your authentication
             </p>
           </div>
           <div className="grid gap-3">
             <Label htmlFor="error">Error Message</Label>
             <div className="bg-destructive/10 rounded-lg p-4">
-              <p className="text-copy-14 text-destructive">{params?.error}</p>
+              <p className="copy-14 text-destructive">{params?.error}</p>
             </div>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">

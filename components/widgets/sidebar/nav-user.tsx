@@ -45,11 +45,11 @@ export function NavUser() {
               className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
             >
               <UserAvatar />
-              <div className="text-copy-14 grid flex-1 text-left leading-tight">
+              <div className="copy-14 grid flex-1 text-left leading-tight">
                 <span className="truncate">
                   <UserDisplayName />
                 </span>
-                <span className="text-copy-12 truncate">
+                <span className="copy-12 truncate">
                   <UserEmail />
                 </span>
               </div>
@@ -63,13 +63,13 @@ export function NavUser() {
             sideOffset={4}
           >
             <DropdownMenuLabel className="p-0">
-              <div className="text-copy-14 flex items-center gap-2 px-1 py-1.5 text-left">
+              <div className="copy-14 flex items-center gap-2 px-1 py-1.5 text-left">
                 <UserAvatar />
-                <div className="text-copy-14 grid flex-1 text-left leading-tight">
+                <div className="copy-14 grid flex-1 text-left leading-tight">
                   <span className="truncate">
                     <UserDisplayName />
                   </span>
-                  <span className="text-copy-12 truncate">
+                  <span className="copy-12 truncate">
                     <UserEmail />
                   </span>
                 </div>

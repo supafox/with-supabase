@@ -264,7 +264,7 @@ export function AvatarForm() {
               />
             ) : (
               <div className="from-primary/20 to-secondary/20 flex size-full items-center justify-center bg-gradient-to-br">
-                <span className="text-primary text-copy-18">{initial}</span>
+                <span className="text-primary copy-18">{initial}</span>
               </div>
             )}
           </div>

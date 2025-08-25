@@ -10,8 +10,8 @@ export default function Docs() {
   return (
     <div className="container mx-auto flex flex-col gap-16 pt-36 pb-20">
       <div className="flex flex-col">
-        <h1 className="text-heading-56">Docs</h1>
-        <p className="text-copy-20 text-muted-foreground">
+        <h1 className="heading-56">Docs</h1>
+        <p className="copy-20 text-muted-foreground">
           Documentation for the project
         </p>
       </div>
@@ -24,8 +24,8 @@ export default function Docs() {
                 className="border-border flex flex-col gap-4 rounded-lg border p-6"
               >
                 <div className="flex flex-col gap-2">
-                  <h2 className="text-heading-20">{item.name}</h2>
-                  <p className="text-copy-16 text-muted-foreground">
+                  <h2 className="heading-20">{item.name}</h2>
+                  <p className="copy-16 text-muted-foreground">
                     {item.description}
                   </p>
                 </div>
@@ -35,6 +35,7 @@ export default function Docs() {
                     buttonVariants({ variant: "link" }),
                     "w-fit pl-0"
                   )}
+                  aria-label={`Read more about ${item.name}`}
                 >
                   Read more
                 </Link>
