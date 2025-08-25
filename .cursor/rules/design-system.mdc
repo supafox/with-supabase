@@ -2,5 +2,5 @@
 alwaysApply: true
 ---
 
-- Only use project-defined typography utilities (e.g., `text-heading-*`, `text-copy-*`, `text-button-*`, `text-label-*`).
+- Only use project-defined typography utilities (e.g., `heading-*`, `copy-*`, `button-*`, `label-*`).
 - Do not use Tailwind's default `text-*`, `font-*`, `leading-*`, or `tracking-*` classes directly.

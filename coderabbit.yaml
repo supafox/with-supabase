@@ -1,67 +1,67 @@
 reviews:
   path_instructions:
-    - path: "/components/ui/"
+    - path: "components/ui/"
       instructions: |
         ✅ Use for atomic, stateless design system primitives only (e.g., Button, Input, Card).
         ✅ Style with Tailwind utility classes or design tokens only.
         ❌ Do not fetch data or include context/state logic.
         ❌ Do not use feature-specific props or business logic.
 
-    - path: "/shared/ui/"
+    - path: "shared/ui/"
       instructions: |
         ✅ Use for reusable presentational components that are composed from primitives.
         ✅ May include layout awareness or context (e.g., responsive, theme).
         ❌ Do not include API calls, server actions, or side effects.
 
-    - path: "/features/"
+    - path: "features/"
       instructions: |
         ✅ Use for domain-specific logic and components (e.g., Auth, Billing).
         ✅ May include feature-specific hooks, actions, and schema validation.
         ✅ Can use Supabase, APIs, or database logic.
         ❌ Do not put shared/global components here.
 
-    - path: "/components/widgets/"
+    - path: "components/widgets/"
       instructions: |
         ✅ Use for layout/page-specific component compositions (e.g., Navbar, HeroSection).
         ✅ Can compose shared UI, features, and include state handlers.
         ❌ Do not reuse these components in other routes or features.
 
-    - path: "/shared/hooks/"
+    - path: "shared/hooks/"
       instructions: |
         ✅ Use for global, cross-feature utility hooks.
         ❌ Do not use feature-specific logic or local state here.
 
-    - path: "/lib/"
+    - path: "lib/"
       instructions: |
         ✅ Use for shared utilities, API clients, database setup, or helper functions.
         ❌ Do not include UI components or page-level logic.
 
-    - path: "/constants/"
+    - path: "constants/"
       instructions: |
         ✅ Use for design tokens, route maps, SEO defaults, or static config.
         ❌ Do not include application logic or component code.
 
-    - path: "/styles/"
+    - path: "styles/"
       instructions: |
         ✅ Use for global Tailwind layers and MDX-specific styles.
         ❌ Do not add component-scoped styles here.
 
-    - path: "/app/"
+    - path: "app/"
       instructions: |
-        ✅ Use only the typography utility classes defined in `globals.css` (e.g., `text-heading-*`, `text-copy-*`, `text-button-*`, `text-label-*`).
+        ✅ Use only the typography utility classes defined in `globals.css` (e.g., `heading-*`, `copy-*`, `button-*`, `label-*`).
         ❌ Do not use Tailwind's built-in typography utilities like `text-*`, `font-*`, `leading-*`, or `tracking-*` classes directly.
 
-    - path: "/components/"
+    - path: "components/"
       instructions: |
-        ✅ Use only the typography utility classes defined in `globals.css` (e.g., `text-heading-*`, `text-copy-*`, `text-button-*`, `text-label-*`).
+        ✅ Use only the typography utility classes defined in `globals.css` (e.g., `heading-*`, `copy-*`, `button-*`, `label-*`).
         ❌ Do not use Tailwind's built-in typography utilities like `text-*`, `font-*`, `leading-*`, or `tracking-*` classes directly.
 
-    - path: "/features/"
+    - path: "features/"
       instructions: |
-        ✅ Use only the typography utility classes defined in `globals.css` (e.g., `text-heading-*`, `text-copy-*`, `text-button-*`, `text-label-*`).
+        ✅ Use only the typography utility classes defined in `globals.css` (e.g., `heading-*`, `copy-*`, `button-*`, `label-*`).
         ❌ Do not use Tailwind's built-in typography utilities like `text-*`, `font-*`, `leading-*`, or `tracking-*` classes directly.
 
-    - path: "/components/widgets/"
+    - path: "components/widgets/"
       instructions: |
-        ✅ Use only the typography utility classes defined in `globals.css` (e.g., `text-heading-*`, `text-copy-*`, `text-button-*`, `text-label-*`).
+        ✅ Use only the typography utility classes defined in `globals.css` (e.g., `heading-*`, `copy-*`, `button-*`, `label-*`).
         ❌ Do not use Tailwind's built-in typography utilities like `text-*`, `font-*`, `leading-*`, or `tracking-*` classes directly.

@@ -58,7 +58,7 @@ function InputOTPSlot({
       data-active={isActive}
       className={cn(
         // Base styles
-        "text-copy-14 relative flex h-9 w-9 items-center justify-center shadow-xs transition-all outline-none",
+        "copy-14 relative flex h-9 w-9 items-center justify-center shadow-xs transition-all outline-none",
         // Border styles
         "border-input border-y border-r first:border-l",
         // Border radius

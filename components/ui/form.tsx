@@ -150,7 +150,7 @@ function FormDescription({ className, ...props }: React.ComponentProps<"p">) {
       data-slot="form-description"
       {...props}
       id={formDescriptionId}
-      className={cn("text-muted-foreground text-copy-14", className)}
+      className={cn("text-muted-foreground copy-14", className)}
     />
   )
 }
@@ -170,7 +170,7 @@ function FormMessage({ className, ...props }: React.ComponentProps<"p">) {
       data-slot="form-message"
       {...props}
       id={formMessageId}
-      className={cn("text-destructive text-copy-14", className)}
+      className={cn("text-destructive copy-14", className)}
       role={error ? "alert" : undefined}
     >
       {body}

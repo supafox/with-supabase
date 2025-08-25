@@ -15,7 +15,7 @@ export function UserProfile() {
         <UserAvatar className="size-16" />
         <div className="flex flex-col text-center md:text-left">
           <UserDisplayName />
-          <h2 className="text-heading-20">
+          <h2 className="heading-20">
             <UserName />
           </h2>
         </div>

@@ -61,7 +61,7 @@ export default function Nav() {
                 <Link
                   key={route.path}
                   href={route.path}
-                  className={`text-button-14 hover:text-foreground/80 rounded-md px-3 py-2 transition-colors ${
+                  className={`copy-14 hover:text-foreground/80 rounded-md px-3 py-2 transition-colors ${
                     active
                       ? "text-foreground underline underline-offset-4"
                       : "text-foreground/60"
@@ -123,7 +123,7 @@ export default function Nav() {
               <Link
                 key={route.path}
                 href={route.path}
-                className={`text-button-14 hover:bg-accent hover:text-foreground/80 focus:ring-ring block rounded-md px-3 py-2 transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none ${
+                className={`button-14 hover:bg-accent hover:text-foreground/80 focus:ring-ring block rounded-md px-3 py-2 transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none ${
                   active ? "bg-accent text-foreground" : "text-foreground/60"
                 }`}
                 aria-current={active ? "page" : undefined}

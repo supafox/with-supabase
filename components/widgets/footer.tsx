@@ -57,7 +57,7 @@ export default function Footer() {
           </nav>
         </div>
         <div className="mt-6 text-center">
-          <p className="text-copy-14 text-muted-foreground">
+          <p className="copy-14 text-muted-foreground">
             Built with Next.js and Tailwind CSS
           </p>
         </div>

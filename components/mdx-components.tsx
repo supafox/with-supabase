@@ -12,16 +12,13 @@ const validateImageDimension = (value: unknown): number | null => {
 
 export const mdxComponents = {
   h1: ({ className, ...props }: React.ComponentProps<"h1">) => (
-    <h1
-      className={cn("text-heading-48 mt-2 scroll-m-28", className)}
-      {...props}
-    />
+    <h1 className={cn("heading-48 mt-2 scroll-m-28", className)} {...props} />
   ),
   h2: ({ className, ...props }: React.ComponentProps<"h2">) => {
     return (
       <h2
         className={cn(
-          "text-heading-40 mt-12 scroll-m-28 first:mt-0 lg:mt-20 [&+p]:!mt-4",
+          "heading-40 mt-12 scroll-m-28 first:mt-0 lg:mt-20 [&+p]:!mt-4",
           className
         )}
         {...props}
@@ -29,28 +26,16 @@ export const mdxComponents = {
     )
   },
   h3: ({ className, ...props }: React.ComponentProps<"h3">) => (
-    <h3
-      className={cn("text-heading-32 mt-10 scroll-m-28", className)}
-      {...props}
-    />
+    <h3 className={cn("heading-32 mt-10 scroll-m-28", className)} {...props} />
   ),
   h4: ({ className, ...props }: React.ComponentProps<"h4">) => (
-    <h4
-      className={cn("text-heading-28 mt-8 scroll-m-28", className)}
-      {...props}
-    />
+    <h4 className={cn("heading-28 mt-8 scroll-m-28", className)} {...props} />
   ),
   h5: ({ className, ...props }: React.ComponentProps<"h5">) => (
-    <h5
-      className={cn("text-heading-24 mt-6 scroll-m-28", className)}
-      {...props}
-    />
+    <h5 className={cn("heading-24 mt-6 scroll-m-28", className)} {...props} />
   ),
   h6: ({ className, ...props }: React.ComponentProps<"h6">) => (
-    <h6
-      className={cn("text-heading-20 mt-4 scroll-m-28", className)}
-      {...props}
-    />
+    <h6 className={cn("heading-20 mt-4 scroll-m-28", className)} {...props} />
   ),
   a: ({ className, ...props }: React.ComponentProps<"a">) => (
     <a
@@ -60,7 +45,7 @@ export const mdxComponents = {
   ),
   p: ({ className, ...props }: React.ComponentProps<"p">) => (
     <p
-      className={cn("text-copy-16 [&:not(:first-child)]:mt-6", className)}
+      className={cn("copy-16 [&:not(:first-child)]:mt-6", className)}
       {...props}
     />
   ),
@@ -93,7 +78,7 @@ export const mdxComponents = {
     <div className="my-6 w-full overflow-y-auto">
       <table
         className={cn(
-          "text-copy-14 relative w-full overflow-hidden border-none",
+          "copy-14 relative w-full overflow-hidden border-none",
           className
         )}
         {...props}
@@ -130,7 +115,7 @@ export const mdxComponents = {
       return (
         <code
           className={cn(
-            "bg-muted text-copy-14 relative rounded-md px-[0.3rem] py-[0.2rem] font-mono outline-none",
+            "bg-muted copy-14 relative rounded-md px-[0.3rem] py-[0.2rem] font-mono outline-none",
             className
           )}
           {...props}
@@ -174,10 +159,10 @@ export const mdxComponents = {
           )}
         >
           <div className="flex flex-col items-center gap-2 text-center">
-            <div className="text-copy-14 text-muted-foreground">
+            <div className="copy-14 text-muted-foreground">
               Invalid image source
             </div>
-            <div className="text-copy-12 text-muted-foreground">
+            <div className="copy-12 text-muted-foreground">
               {alt || "Image"}
             </div>
           </div>
