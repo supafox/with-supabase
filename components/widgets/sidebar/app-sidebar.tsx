@@ -31,7 +31,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   })) satisfies React.ComponentProps<typeof NavCustomers>["customers"]
 
   return (
-    <Sidebar variant="inset" collapsible="icon" {...props}>
+    <Sidebar variant="sidebar" collapsible="icon" {...props}>
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
