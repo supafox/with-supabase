@@ -93,7 +93,7 @@ export default async function Page(props: {
           <h1 className="heading-56">{doc.title}</h1>
           <p className="copy-20 text-muted-foreground">{doc.description}</p>
         </div>
-        <div className="flex max-w-2xl gap-2">
+        <div className="flex max-w-2xl flex-shrink-0 gap-2">
           {neighbours.previous && (
             <Link
               href={neighbours.previous.url}
@@ -113,7 +113,7 @@ export default async function Page(props: {
           )}
         </div>
       </div>
-      <div className="w-full flex-1">
+      <div className="w-full">
         <MDX components={mdxComponents} />
       </div>
       <div className="flex items-center justify-between">

@@ -4,8 +4,6 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --breakpoint-3xl: 1600px;
-  --breakpoint-4xl: 2000px;
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
   --color-background: var(--background);
@@ -339,5 +337,12 @@
 }
 
 @utility container {
-  @apply 3xl:max-w-[1600px] 4xl:max-w-[1800px] mx-auto max-w-[1400px] px-4 lg:px-8;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  @media (min-width: 640px) {
+    max-width: none;
+  }
+  @media (min-width: 1400px) {
+    max-width: 1400px;
+  }
 }
